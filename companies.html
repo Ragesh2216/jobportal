@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description"
+        content="Explore top hiring companies on Stackly. Find your ideal employer from India's best organisations." />
+    <title>Top Companies – Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-logo">Stack<span>ly</span></div>
+        <div class="splash-tagline">Find your dream job today.</div>
+        <div class="splash-loader">
+            <div class="splash-loader-bar"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a class="nav-logo" href="index.html">Stack<span>ly</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="companies.html" class="active">Companies</a></li>
+            <li><a href="dashboard.html">Dashboard</a><a href="resume.html">Resume</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html"><button class="btn-outline">Login</button></a>
+            <a href="login.html"><button class="btn-primary">Post a Job</button></a>
+        </div>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a href="companies.html">Companies</a><a
+            href="resume.html">Resume</a>
+        <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem">Login</button></a>
+    </div>
+
+    <div class="page-header">
+        <h1>Top Companies Hiring Now</h1>
+        <p>Discover the best employers and explore their open positions.</p>
+    </div>
+
+    <!-- Search bar for companies -->
+    <div style="background:#fff;border-bottom:1px solid var(--border);padding:1.25rem 1.5rem">
+        <div style="max-width:600px;margin:0 auto;display:flex;gap:.75rem;flex-wrap:wrap">
+            <input type="text" placeholder="Search companies..."
+                style="flex:1;min-width:200px;padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:.9rem;outline:none" />
+            <select
+                style="padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:.875rem;outline:none;color:var(--dark)">
+                <option>All Industries</option>
+                <option>IT & Software</option>
+                <option>Finance</option>
+                <option>E-Commerce</option>
+                <option>Healthcare</option>
+                <option>Manufacturing</option>
+            </select>
+            <button class="btn-primary" onclick="window.location.href='404.html'">Search</button>
+        </div>
+    </div>
+
+    <div class="companies-grid-page">
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#4285f4">G</div>
+            <div class="company-page-name">Google India</div>
+            <div class="company-page-industry">IT & Software</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">340</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.9⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#00a4ef">M</div>
+            <div class="company-page-name">Microsoft</div>
+            <div class="company-page-industry">IT & Software</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">215</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.8⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#ff9900">A</div>
+            <div class="company-page-name">Amazon</div>
+            <div class="company-page-industry">E-Commerce</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">890</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.6⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#1da462">I</div>
+            <div class="company-page-name">Infosys</div>
+            <div class="company-page-industry">IT Services</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">430</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.2⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#e03b8b">F</div>
+            <div class="company-page-name">Flipkart</div>
+            <div class="company-page-industry">E-Commerce</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">180</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.5⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#3b5bdb">T</div>
+            <div class="company-page-name">TCS</div>
+            <div class="company-page-industry">IT Services</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">620</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.1⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#f76707">W</div>
+            <div class="company-page-name">Wipro</div>
+            <div class="company-page-industry">IT Services</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">310</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.0⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#0a66c2">L</div>
+            <div class="company-page-name">LinkedIn</div>
+            <div class="company-page-industry">Social Media</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">120</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.7⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#8b5cf6">Z</div>
+            <div class="company-page-name">Zomato</div>
+            <div class="company-page-industry">Food Tech</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">95</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.3⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#06b6d4">S</div>
+            <div class="company-page-name">Swiggy</div>
+            <div class="company-page-industry">Food Delivery</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">78</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.2⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#10b981">P</div>
+            <div class="company-page-name">Paytm</div>
+            <div class="company-page-industry">FinTech</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">160</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">3.9⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+
+        <div class="company-card-page reveal">
+            <div class="company-big-logo" style="background:#ef4444">H</div>
+            <div class="company-page-name">HCL Tech</div>
+            <div class="company-page-industry">IT Services</div>
+            <div class="company-page-stats">
+                <div class="company-stat">
+                    <div class="num">290</div>
+                    <div class="lbl">Open Jobs</div>
+                </div>
+                <div class="company-stat">
+                    <div class="num">4.0⭐</div>
+                    <div class="lbl">Rating</div>
+                </div>
+            </div>
+            <button class="btn-primary" style="width:100%" onclick="window.location.href='404.html'">View Jobs</button>
+        </div>
+    </div>
+
+    <div style="text-align:center;padding:0 1.5rem 3rem">
+        <button class="btn-ghost" onclick="window.location.href='404.html'">Load More Companies</button>
+    </div>
+
+    <footer
+        style="background:var(--dark);padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.5);font-size:.85rem">
+        <p>© 2026 Stackly. All rights reserved. | <a href="index.html" style="color:var(--primary-light)">Home</a></p>
+    </footer>
+    <button id="scroll-top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

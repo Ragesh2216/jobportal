@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description"
+        content="Build or upload your resume on Stackly to get discovered by top employers instantly." />
+    <title>Resume Builder – Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body style="background:var(--bg)">
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-logo">Stack<span>ly</span></div>
+        <div class="splash-tagline">Find your dream job today.</div>
+        <div class="splash-loader">
+            <div class="splash-loader-bar"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a class="nav-logo" href="index.html">Stack<span>ly</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="dashboard.html">Dashboard</a><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html"><button class="btn-outline">Login</button></a>
+            <a href="login.html"><button class="btn-primary">Post a Job</button></a>
+        </div>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a href="companies.html">Companies</a><a
+            href="resume.html">Resume</a>
+        <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem">Login</button></a>
+    </div>
+
+    <div class="page-header" style="padding-bottom:2rem">
+        <h1>Stand Out with a Great Resume</h1>
+        <p>Upload your existing resume or build a new one from scratch.</p>
+    </div>
+
+    <div class="resume-layout">
+        <!-- Upload Section -->
+        <div class="resume-card reveal">
+            <h2>Upload Existing Resume</h2>
+            <p style="color:var(--gray);font-size:.9rem;margin-bottom:1.5rem">We'll automatically extract your details
+                to create your Stackly profile.</p>
+            <div class="upload-zone" onclick="window.location.href='404.html'">
+                <div class="upload-icon">📄</div>
+                <p><strong>Click to upload</strong> or drag and drop</p>
+                <p style="font-size:.8rem;margin-top:.5rem">PDF, DOCX up to 5MB</p>
+            </div>
+            <div style="margin-top:1.5rem;display:flex;align-items:center;gap:.75rem">
+                <div
+                    style="width:40px;height:40px;background:rgba(16,185,129,.1);color:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem">
+                    ✓</div>
+                <div style="font-size:.85rem;color:var(--dark3)"><strong>Smart extraction</strong><br />Powered by AI to
+                    fill your profile instantly</div>
+            </div>
+        </div>
+
+        <!-- Builder Section -->
+        <div class="resume-card reveal">
+            <h2>Build from Scratch</h2>
+            <p style="color:var(--gray);font-size:.9rem;margin-bottom:1.5rem">Use our step-by-step builder to create a
+                professional resume in minutes.</p>
+
+            <div style="display:flex;flex-direction:column;gap:1rem">
+                <div
+                    style="display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--border);border-radius:var(--radius-sm)">
+                    <div
+                        style="width:32px;height:32px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">
+                        1</div>
+                    <div>
+                        <div style="font-weight:600;font-size:.95rem">Personal Details</div>
+                        <div style="font-size:.8rem;color:var(--gray)">Contact info, links &amp; summary</div>
+                    </div>
+                </div>
+
+                <div
+                    style="display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--border);border-radius:var(--radius-sm)">
+                    <div
+                        style="width:32px;height:32px;background:var(--border);color:var(--gray);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">
+                        2</div>
+                    <div>
+                        <div style="font-weight:600;font-size:.95rem">Experience</div>
+                        <div style="font-size:.8rem;color:var(--gray)">Past roles and achievements</div>
+                    </div>
+                </div>
+
+                <div
+                    style="display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid var(--border);border-radius:var(--radius-sm)">
+                    <div
+                        style="width:32px;height:32px;background:var(--border);color:var(--gray);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">
+                        3</div>
+                    <div>
+                        <div style="font-weight:600;font-size:.95rem">Education &amp; Skills</div>
+                        <div style="font-size:.8rem;color:var(--gray)">Degrees, certifications &amp; tools</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="width:100%;margin-top:1.5rem;padding:.85rem;font-size:1rem"
+                onclick="window.location.href='404.html'">Start Building</button>
+        </div>
+    </div>
+
+    <footer
+        style="background:var(--dark);padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.5);font-size:.85rem;margin-top:2rem">
+        <p>© 2026 Stackly. All rights reserved. | <a href="index.html" style="color:var(--primary-light)">Home</a></p>
+    </footer>
+    <button id="scroll-top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

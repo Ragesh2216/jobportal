@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description"
+        content="Browse thousands of job listings on Stackly. Filter by location, experience, salary and more." />
+    <title>Find Jobs – Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        #filter-toggle {
+            display: none;
+            margin-bottom: 1rem;
+        }
+
+        @media(max-width:768px) {
+            #filter-toggle {
+                display: block;
+            }
+
+            .filter-sidebar {
+                display: none;
+            }
+
+            .filter-sidebar.show {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-logo">Stack<span>ly</span></div>
+        <div class="splash-tagline">Find your dream job today.</div>
+        <div class="splash-loader">
+            <div class="splash-loader-bar"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a class="nav-logo" href="index.html">Stack<span>ly</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html" class="active">Find Jobs</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="dashboard.html">Dashboard</a><a href="resume.html">Resume</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html"><button class="btn-outline">Login</button></a>
+            <a href="login.html"><button class="btn-primary">Post a Job</button></a>
+        </div>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Find Jobs</a>
+        <a href="companies.html">Companies</a>
+        <a href="dashboard.html">Dashboard</a><a href="resume.html">Resume</a>
+        <a href="login.html"><button class="btn-outline" style="width:100%;margin-top:.5rem">Login</button></a>
+        <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem">Post a Job</button></a>
+    </div>
+
+    <div class="page-header">
+        <h1>Find Your Next Role</h1>
+        <p>Explore 50,000+ job listings from top companies across India.</p>
+    </div>
+
+    <div class="jobs-layout">
+        <!-- Sidebar Filters -->
+        <aside>
+            <button id="filter-toggle" class="btn-ghost" style="width:100%">☰ Filters</button>
+            <div class="filter-sidebar">
+                <div class="filter-title">Filters <span style="color:var(--primary);font-size:.8rem;cursor:pointer"
+                        onclick="window.location.href='404.html'">Clear All</span></div>
+                <div class="filter-group">
+                    <h4>Experience Level</h4>
+                    <label><input type="checkbox" /> Fresher (0–1 yr)</label>
+                    <label><input type="checkbox" checked /> Junior (1–3 yrs)</label>
+                    <label><input type="checkbox" /> Mid (3–6 yrs)</label>
+                    <label><input type="checkbox" /> Senior (6+ yrs)</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Job Type</h4>
+                    <label><input type="checkbox" checked /> Full Time</label>
+                    <label><input type="checkbox" /> Part Time</label>
+                    <label><input type="checkbox" /> Contract</label>
+                    <label><input type="checkbox" /> Internship</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Work Mode</h4>
+                    <label><input type="checkbox" checked /> Remote</label>
+                    <label><input type="checkbox" checked /> Hybrid</label>
+                    <label><input type="checkbox" /> On-site</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Salary Range</h4>
+                    <p style="font-size:.8rem;color:var(--gray);margin-bottom:.5rem">₹5 LPA – ₹50 LPA</p>
+                    <input type="range" class="range-slider" min="5" max="50" value="30" />
+                </div>
+                <div class="filter-group">
+                    <h4>Location</h4>
+                    <label><input type="checkbox" checked /> Bangalore</label>
+                    <label><input type="checkbox" checked /> Mumbai</label>
+                    <label><input type="checkbox" /> Hyderabad</label>
+                    <label><input type="checkbox" /> Delhi NCR</label>
+                    <label><input type="checkbox" /> Pune</label>
+                    <label><input type="checkbox" /> Chennai</label>
+                </div>
+                <button class="btn-primary" style="width:100%;padding:.7rem"
+                    onclick="window.location.href='404.html'">Apply Filters</button>
+            </div>
+        </aside>
+
+        <!-- Job List -->
+        <div class="jobs-main">
+            <div class="jobs-toolbar">
+                <div class="jobs-count">Showing <strong>1–10</strong> of <strong>50,234</strong> jobs</div>
+                <select
+                    style="padding:.4rem .75rem;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:.85rem;color:var(--dark);outline:none">
+                    <option>Most Relevant</option>
+                    <option>Latest First</option>
+                    <option>Salary: High to Low</option>
+                    <option>Salary: Low to High</option>
+                </select>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#4f46e5,#818cf8)">G</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Senior Frontend
+                            Developer</a></div>
+                    <div class="job-list-company">Google India</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Bangalore</span>
+                        <span class="meta-pill">💼 5–8 yrs</span>
+                        <span class="meta-pill">₹25–40 LPA</span>
+                        <span class="tag-remote">Remote</span>
+                    </div>
+                    <div class="job-list-desc">Build next-gen web experiences using React, TypeScript and modern
+                        tooling. Work alongside world-class engineers in a collaborative environment.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">2 days ago</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#06b6d4,#0891b2)">M</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Product Manager –
+                            Cloud</a></div>
+                    <div class="job-list-company">Microsoft</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Hyderabad</span>
+                        <span class="meta-pill">💼 4–7 yrs</span>
+                        <span class="meta-pill">₹30–50 LPA</span>
+                        <span class="tag-urgent">Urgent</span>
+                    </div>
+                    <div class="job-list-desc">Drive product strategy for Azure cloud services. Partner with engineering
+                        and design teams to define roadmaps and deliver user impact at scale.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">3 days ago</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#f59e0b,#d97706)">A</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Senior UX Designer</a>
+                    </div>
+                    <div class="job-list-company">Amazon</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Mumbai</span>
+                        <span class="meta-pill">💼 3–6 yrs</span>
+                        <span class="meta-pill">₹18–28 LPA</span>
+                        <span class="tag-remote">Hybrid</span>
+                    </div>
+                    <div class="job-list-desc">Shape the future of e-commerce UX for millions of users. You'll work on
+                        end-to-end design for Amazon India's core shopping experiences.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">1 day ago</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#10b981,#059669)">I</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Data Scientist –
+                            AI/ML</a></div>
+                    <div class="job-list-company">Infosys</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Pune</span>
+                        <span class="meta-pill">💼 2–5 yrs</span>
+                        <span class="meta-pill">₹20–35 LPA</span>
+                        <span class="tag-remote">On-site</span>
+                    </div>
+                    <div class="job-list-desc">Apply machine learning and deep learning models to real-world enterprise
+                        challenges. Strong Python and TensorFlow/PyTorch skills required.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">5 days ago</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#ef4444,#dc2626)">F</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Backend Engineer –
+                            Java</a></div>
+                    <div class="job-list-company">Flipkart</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Remote</span>
+                        <span class="meta-pill">💼 3–7 yrs</span>
+                        <span class="meta-pill">₹22–38 LPA</span>
+                        <span class="tag-remote">Remote</span>
+                        <span class="tag-urgent">Hot</span>
+                    </div>
+                    <div class="job-list-desc">Scale Flipkart's commerce backbone services. Strong Java, Spring Boot,
+                        and distributed systems experience needed. Remote friendly role.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">Today</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">T</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">DevOps Engineer</a>
+                    </div>
+                    <div class="job-list-company">TCS</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Chennai</span>
+                        <span class="meta-pill">💼 2–4 yrs</span>
+                        <span class="meta-pill">₹15–25 LPA</span>
+                    </div>
+                    <div class="job-list-desc">Manage CI/CD pipelines, containerisation and cloud infra. Expertise in
+                        Docker, Kubernetes, and AWS/Azure preferred.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">1 week ago</span>
+                </div>
+            </div>
+
+            <div class="job-list-card">
+                <div class="company-logo" style="background:linear-gradient(135deg,#f76707,#e8590c)">W</div>
+                <div class="job-list-info">
+                    <div class="job-list-title"><a href="job-detail.html" style="color:inherit">Business Analyst</a>
+                    </div>
+                    <div class="job-list-company">Wipro</div>
+                    <div class="job-list-meta">
+                        <span class="meta-pill">📍 Delhi NCR</span>
+                        <span class="meta-pill">💼 1–3 yrs</span>
+                        <span class="meta-pill">₹8–14 LPA</span>
+                        <span class="tag-remote">Hybrid</span>
+                    </div>
+                    <div class="job-list-desc">Analyse business processes, gather requirements, and translate needs into
+                        actionable project deliverables for enterprise clients.</div>
+                </div>
+                <div class="job-list-actions">
+                    <button class="job-save-btn">🔖</button>
+                    <button class="btn-apply" onclick="window.location.href='404.html'">Apply</button>
+                    <span style="font-size:.75rem;color:var(--gray)">4 days ago</span>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display:flex;gap:.5rem;justify-content:center;padding:1rem 0;flex-wrap:wrap">
+                <button
+                    style="padding:.45rem .85rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;cursor:pointer;font-weight:600;color:var(--primary)"
+                    onclick="window.location.href='404.html'">‹ Prev</button>
+                <button
+                    style="padding:.45rem .85rem;border:none;border-radius:var(--radius-sm);background:var(--primary);color:#fff;cursor:pointer;font-weight:600">1</button>
+                <button
+                    style="padding:.45rem .85rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;cursor:pointer"
+                    onclick="window.location.href='404.html'">2</button>
+                <button
+                    style="padding:.45rem .85rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;cursor:pointer"
+                    onclick="window.location.href='404.html'">3</button>
+                <span style="padding:.45rem .5rem;color:var(--gray)">...</span>
+                <button
+                    style="padding:.45rem .85rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;cursor:pointer"
+                    onclick="window.location.href='404.html'">50</button>
+                <button
+                    style="padding:.45rem .85rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;cursor:pointer;font-weight:600;color:var(--primary)"
+                    onclick="window.location.href='404.html'">Next ›</button>
+            </div>
+        </div>
+    </div>
+
+    <footer
+        style="background:var(--dark);padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.5);font-size:.85rem">
+        <p>© 2026 Stackly. All rights reserved. | <a href="index.html" style="color:var(--primary-light)">Home</a></p>
+    </footer>
+    <button id="scroll-top" aria-label="Scroll to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
