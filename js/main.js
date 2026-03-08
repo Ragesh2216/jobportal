@@ -32,6 +32,21 @@ if (hamburger && mobileMenu) {
   });
 }
 
+// ===== Mobile Dropdown Toggles =====
+const mobileDropdownHeaders = document.querySelectorAll('.mobile-dropdown-header');
+mobileDropdownHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const parent = header.parentElement;
+    parent.classList.toggle('open');
+    // Toggle arrow direction using textContent
+    if (parent.classList.contains('open')) {
+      header.innerHTML = header.innerHTML.replace('▼', '▲');
+    } else {
+      header.innerHTML = header.innerHTML.replace('▲', '▼');
+    }
+  });
+});
+
 // ===== Scroll To Top Button =====
 const scrollBtn = document.getElementById('scroll-top');
 if (scrollBtn) {

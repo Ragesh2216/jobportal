@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="Page not found." />
+    <title>404 Not Found – Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body style="background:var(--bg)">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-logo">Stack<span>ly</span></div>
+        <div class="splash-tagline">Find your dream job today.</div>
+        <div class="splash-loader">
+            <div class="splash-loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" style="border-bottom:1px solid var(--border);background:#fff">
+        <a class="nav-logo" href="home2.html">Stack<span>ly</span></a>
+        <ul class="nav-links">
+            <li class="nav-item-dropdown">
+                <a href="home2.html">Home ▼</a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1</a>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html"><button class="btn-primary">Login</button></a>
+        </div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">Home2 ▼</div>
+            <div class="mobile-dropdown-content">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem;">Login</button></a>
+    </div>
+
+    <div class="page-header">
+        <h1>Contact Our Team</h1>
+        <p>Have questions or feedback? We'd love to hear from you.</p>
+    </div>
+
+    <div class="container"
+        style="max-width:600px;margin:3rem auto;background:#fff;padding:3rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <form action="404.html" style="display:flex;flex-direction:column;gap:1.5rem">
+            <div style="display:flex;flex-direction:column;gap:.5rem">
+                <label for="name" style="font-size:.9rem;font-weight:600;color:var(--dark)">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe"
+                    style="padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);outline:none;font-family:inherit" />
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:.5rem">
+                <label for="email" style="font-size:.9rem;font-weight:600;color:var(--dark)">Email Address</label>
+                <input type="email" id="email" required placeholder="john@example.com"
+                    style="padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);outline:none;font-family:inherit" />
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:.5rem">
+                <label for="subject" style="font-size:.9rem;font-weight:600;color:var(--dark)">Subject</label>
+                <select id="subject"
+                    style="padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);outline:none;font-family:inherit;background:#fff">
+                    <option>General Inquiry</option>
+                    <option>I need help finding a job</option>
+                    <option>I'm an employer with a question</option>
+                    <option>Report an issue / Bug</option>
+                </select>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:.5rem">
+                <label for="message" style="font-size:.9rem;font-weight:600;color:var(--dark)">Message</label>
+                <textarea id="message" required rows="5" placeholder="How can we help you?"
+                    style="padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);outline:none;font-family:inherit;resize:vertical"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary"
+                style="width:100%;padding:1rem;font-size:1rem;margin-top:1rem">Send Message</button>
+        </form>
+    </div>
+
+    <footer
+        style="background:var(--dark);padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.5);font-size:.85rem;margin-top:4rem">
+        <p style="margin-bottom:.5rem;color:var(--gray)">📍 Location: Stackly Salem</p>
+        <p>© 2026 Stackly. All rights reserved. | <a href="home2.html" style="color:var(--primary-light)">Home</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

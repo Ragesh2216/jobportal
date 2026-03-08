@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta name="description"
+    content="Stackly – India's leading job portal. Find your dream job from 50,000+ listings across top companies." />
+  <title>Stackly – Find Your Dream Job</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-logo">Stack<span>ly</span></div>
+    <div class="splash-tagline">Your Career, Ignited.</div>
+    <div class="splash-loader">
+      <div class="splash-loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="nav-logo" href="home2.html">Stack<span>ly</span></a>
+    <ul class="nav-links">
+      <li class="nav-item-dropdown">
+        <a href="home2.html" class="active">Home2 ▼</a>
+        <div class="dropdown-menu">
+          <a href="index.html">Home </a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html"><button class="btn-primary">Login</button></a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-dropdown">
+      <div class="mobile-dropdown-header">Home2 ▼</div>
+      <div class="mobile-dropdown-content">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem;">Login</button></a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-anim">
+      <div class="hero-blob"></div>
+      <div class="hero-blob"></div>
+      <div class="hero-blob"></div>
+      <div class="hero-particles"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-badge">⚡ Welcome to Home 2</div>
+      <h1 class="hero-title">Alternative <span>Landing Page</span><br />Design Concept</h1>
+      <p class="hero-sub">This is a placeholder for the second home page design. Explore thousands of opportunities from
+        top companies.</p>
+
+      <div class="hero-search-box">
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input type="text" placeholder="Job title, skills, or company" id="search-keyword" />
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <input type="text" placeholder="City, state or remote" id="search-location" />
+        </div>
+        <button class="btn-search" onclick="window.location.href='404.html'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          Search Jobs
+        </button>
+      </div>
+
+      <div class="hero-tags">
+        <span class="hero-tag" onclick="window.location.href='404.html'">💻 Software</span>
+        <span class="hero-tag" onclick="window.location.href='404.html'">📊 Finance</span>
+        <span class="hero-tag" onclick="window.location.href='404.html'">🎨 Design</span>
+        <span class="hero-tag" onclick="window.location.href='404.html'">🏥 Healthcare</span>
+        <span class="hero-tag" onclick="window.location.href='404.html'">📱 Marketing</span>
+        <span class="hero-tag" onclick="window.location.href='404.html'">⚙️ Engineering</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="50000" data-suffix="+">0+</span></div>
+          <div class="stat-label">Active Jobs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="12000" data-suffix="+">0+</span></div>
+          <div class="stat-label">Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="8500000" data-suffix="+">0+</span></div>
+          <div class="stat-label">Job Seekers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="95" data-suffix="%">0%</span></div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Categories -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Explore Categories</div>
+        <h2 class="section-title">Browse by <span>Industry</span></h2>
+        <p class="section-sub">Choose from 20+ job categories and find your perfect match.</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">💻</div>
+          <div class="cat-name">IT & Software</div>
+          <div class="cat-count">18,540 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">📊</div>
+          <div class="cat-name">Finance</div>
+          <div class="cat-count">6,210 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🎨</div>
+          <div class="cat-name">Design</div>
+          <div class="cat-count">4,870 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🏥</div>
+          <div class="cat-name">Healthcare</div>
+          <div class="cat-count">7,320 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">📱</div>
+          <div class="cat-name">Marketing</div>
+          <div class="cat-count">5,100 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">⚙️</div>
+          <div class="cat-name">Engineering</div>
+          <div class="cat-count">9,450 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">📚</div>
+          <div class="cat-name">Education</div>
+          <div class="cat-count">3,210 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🚚</div>
+          <div class="cat-name">Logistics</div>
+          <div class="cat-count">2,890 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🛒</div>
+          <div class="cat-name">Sales</div>
+          <div class="cat-count">8,140 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">⚖️</div>
+          <div class="cat-name">Legal</div>
+          <div class="cat-count">1,560 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🏗️</div>
+          <div class="cat-name">Construction</div>
+          <div class="cat-count">3,760 jobs</div>
+        </div>
+        <div class="category-card reveal" onclick="window.location.href='404.html'">
+          <div class="cat-icon">🍽️</div>
+          <div class="cat-name">Hospitality</div>
+          <div class="cat-count">2,340 jobs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs -->
+  <section class="featured-jobs">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Hot Picks</div>
+        <h2 class="section-title">Featured <span>Job Openings</span></h2>
+        <p class="section-sub">Handpicked opportunities from verified employers.</p>
+      </div>
+      <div class="jobs-grid">
+
+        <div class="job-card reveal">
+          <div class="badge-new">NEW</div>
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#4f46e5,#818cf8)">G</div>
+            <div>
+              <div class="job-title">Senior Frontend Developer</div>
+              <div class="company-name">Google India</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Full Time</span>
+            <span class="job-tag green">Remote</span>
+            <span class="job-tag orange">Senior</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Bangalore</span>
+            <span class="job-meta-item">🕐 2 days ago</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹25–40 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="job-card reveal">
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#06b6d4,#0891b2)">M</div>
+            <div>
+              <div class="job-title">Product Manager</div>
+              <div class="company-name">Microsoft</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Full Time</span>
+            <span class="job-tag orange">Mid Level</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Hyderabad</span>
+            <span class="job-meta-item">🕐 3 days ago</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹30–50 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="job-card reveal">
+          <div class="badge-new">NEW</div>
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#f59e0b,#d97706)">A</div>
+            <div>
+              <div class="job-title">UX Designer</div>
+              <div class="company-name">Amazon</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Contract</span>
+            <span class="job-tag green">Hybrid</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Mumbai</span>
+            <span class="job-meta-item">🕐 1 day ago</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹18–28 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="job-card reveal">
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#10b981,#059669)">I</div>
+            <div>
+              <div class="job-title">Data Scientist</div>
+              <div class="company-name">Infosys</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Full Time</span>
+            <span class="job-tag orange">Senior</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Pune</span>
+            <span class="job-meta-item">🕐 5 days ago</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹20–35 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="job-card reveal">
+          <div class="badge-new">HOT</div>
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#ef4444,#dc2626)">F</div>
+            <div>
+              <div class="job-title">Backend Engineer</div>
+              <div class="company-name">Flipkart</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Full Time</span>
+            <span class="job-tag green">Remote</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Remote</span>
+            <span class="job-meta-item">🕐 Today</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹22–38 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="job-card reveal">
+          <div class="job-card-header">
+            <div class="company-logo" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">T</div>
+            <div>
+              <div class="job-title">DevOps Engineer</div>
+              <div class="company-name">TCS</div>
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="job-tag">Full Time</span>
+            <span class="job-tag orange">Mid Level</span>
+          </div>
+          <div class="job-meta">
+            <span class="job-meta-item">📍 Chennai</span>
+            <span class="job-meta-item">🕐 1 week ago</span>
+          </div>
+          <div class="job-footer">
+            <div class="job-salary">₹15–25 LPA</div>
+            <button class="btn-apply" onclick="window.location.href='404.html'">Apply Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-wrap reveal">
+        <a href="jobs.html"><button class="btn-ghost">View All Jobs →</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Companies -->
+  <section class="companies-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Top Employers</div>
+        <h2 class="section-title">Trusted by <span>Great Companies</span></h2>
+        <p class="section-sub">Join thousands of professionals working at the world's best companies.</p>
+      </div>
+      <div class="companies-marquee">
+        <div class="marquee-track">
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#4285f4">G</div>
+            <div>
+              <div class="company-chip-name">Google</div>
+              <div class="company-chip-jobs">340 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#00a4ef">M</div>
+            <div>
+              <div class="company-chip-name">Microsoft</div>
+              <div class="company-chip-jobs">215 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#ff9900">A</div>
+            <div>
+              <div class="company-chip-name">Amazon</div>
+              <div class="company-chip-jobs">890 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#0a66c2">L</div>
+            <div>
+              <div class="company-chip-name">LinkedIn</div>
+              <div class="company-chip-jobs">120 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#1da462">I</div>
+            <div>
+              <div class="company-chip-name">Infosys</div>
+              <div class="company-chip-jobs">430 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#e03b8b">F</div>
+            <div>
+              <div class="company-chip-name">Flipkart</div>
+              <div class="company-chip-jobs">180 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#3b5bdb">T</div>
+            <div>
+              <div class="company-chip-name">TCS</div>
+              <div class="company-chip-jobs">620 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#f76707">W</div>
+            <div>
+              <div class="company-chip-name">Wipro</div>
+              <div class="company-chip-jobs">310 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#4285f4">G</div>
+            <div>
+              <div class="company-chip-name">Google</div>
+              <div class="company-chip-jobs">340 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#00a4ef">M</div>
+            <div>
+              <div class="company-chip-name">Microsoft</div>
+              <div class="company-chip-jobs">215 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#ff9900">A</div>
+            <div>
+              <div class="company-chip-name">Amazon</div>
+              <div class="company-chip-jobs">890 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#0a66c2">L</div>
+            <div>
+              <div class="company-chip-name">LinkedIn</div>
+              <div class="company-chip-jobs">120 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#1da462">I</div>
+            <div>
+              <div class="company-chip-name">Infosys</div>
+              <div class="company-chip-jobs">430 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#e03b8b">F</div>
+            <div>
+              <div class="company-chip-name">Flipkart</div>
+              <div class="company-chip-jobs">180 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#3b5bdb">T</div>
+            <div>
+              <div class="company-chip-name">TCS</div>
+              <div class="company-chip-jobs">620 open roles</div>
+            </div>
+          </div>
+          <div class="company-chip">
+            <div class="company-chip-logo" style="background:#f76707">W</div>
+            <div>
+              <div class="company-chip-name">Wipro</div>
+              <div class="company-chip-jobs">310 open roles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-wrap reveal" style="margin-top:2rem">
+        <a href="companies.html"><button class="btn-ghost">Explore All Companies →</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Process</div>
+        <h2 class="section-title">How <span>Stackly</span> Works</h2>
+        <p class="section-sub">Land your dream job in just 4 simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <div class="step-icon">📝</div>
+          <div class="step-title">Create Profile</div>
+          <div class="step-desc">Build your professional profile with your skills, experience and resume.</div>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">2</div>
+          <div class="step-icon">🔍</div>
+          <div class="step-title">Search Jobs</div>
+          <div class="step-desc">Browse thousands of curated jobs or let our AI match you instantly.</div>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">3</div>
+          <div class="step-icon">🚀</div>
+          <div class="step-title">Apply Easily</div>
+          <div class="step-desc">Apply with one click using your pre-saved profile and resume.</div>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">4</div>
+          <div class="step-icon">🎉</div>
+          <div class="step-title">Get Hired</div>
+          <div class="step-desc">Interview, get an offer and start your dream career journey!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Success Stories</div>
+        <h2 class="section-title">People Who Got <span>Hired</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Stackly helped me land my dream role at Google in just 3 weeks. The smart
+            matching algorithm is incredible!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#4f46e5,#818cf8)">R</div>
+            <div>
+              <div class="author-name">Rahul Sharma</div>
+              <div class="author-role">Software Engineer @ Google</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"I was hired within 2 weeks. The UI is clean and applying was super smooth. Best
+            job portal I've used."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#06b6d4,#0891b2)">P</div>
+            <div>
+              <div class="author-name">Priya Nair</div>
+              <div class="author-role">UX Designer @ Flipkart</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★☆</div>
+          <p class="testimonial-text">"The resume builder feature saved so much time. Highly recommend Stackly for
+            freshers and experienced both!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#059669)">A</div>
+            <div>
+              <div class="author-name">Amit Verma</div>
+              <div class="author-role">Data Analyst @ Infosys</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Join 8.5 Million+ professionals who found their dream jobs through Stackly.</p>
+      <div class="cta-actions">
+        <button class="btn-white" onclick="window.location.href='404.html'">🚀 Get Started Free</button>
+        <button class="btn-white-outline" onclick="window.location.href='404.html'">Post a Job</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">Stack<span>ly</span></div>
+        <p style="margin-bottom:1rem">India's most trusted job portal, connecting talent with opportunity since 2020.
+        </p>
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;color:var(--gray);font-size:.95rem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Stackly Salem
+        </div>
+        <div class="social-icons">
+          <div class="social-icon" onclick="window.location.href='404.html'">𝕏</div>
+          <div class="social-icon" onclick="window.location.href='404.html'">in</div>
+          <div class="social-icon" onclick="window.location.href='404.html'">▶</div>
+          <div class="social-icon" onclick="window.location.href='404.html'">f</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>For Job Seekers</h4>
+        <ul>
+          <li><a href="404.html">Browse Jobs</a></li>
+          <li><a href="404.html">Resume Builder</a></li>
+          <li><a href="404.html">Job Alerts</a></li>
+          <li><a href="404.html">Career Advice</a></li>
+          <li><a href="404.html">Salary Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>For Employers</h4>
+        <ul>
+          <li><a href="404.html">Post a Job</a></li>
+          <li><a href="404.html">Search Resumes</a></li>
+          <li><a href="404.html">Pricing Plans</a></li>
+          <li><a href="404.html">Recruit Smarter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="404.html">About Us</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="404.html">Press</a></li>
+          <li><a href="404.html">Contact</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stackly. All rights reserved.</span>
+      <span>Made with ❤️ in India</span>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

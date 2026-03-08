@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="Page not found." />
+    <title>404 Not Found – Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body style="background:var(--bg)">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-logo">Stack<span>ly</span></div>
+        <div class="splash-tagline">Find your dream job today.</div>
+        <div class="splash-loader">
+            <div class="splash-loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" style="border-bottom:1px solid var(--border);background:#fff">
+        <a class="nav-logo" href="home2.html">Stack<span>ly</span></a>
+        <ul class="nav-links">
+            <li class="nav-item-dropdown">
+                <a href="home2.html">Home ▼</a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1</a>
+                </div>
+            </li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html"><button class="btn-primary">Login</button></a>
+        </div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-header">Home2 ▼</div>
+            <div class="mobile-dropdown-content">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html"><button class="btn-primary" style="width:100%;margin-top:.5rem;">Login</button></a>
+    </div>
+
+    <div class="page-header">
+        <h1>About Stackly</h1>
+        <p>We are a passionate team dedicated to connecting talent with amazing opportunities.</p>
+    </div>
+
+    <div class="container"
+        style="max-width:800px;margin:3rem auto;background:#fff;padding:3rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <h2 style="margin-bottom:1.5rem">Our Mission</h2>
+        <p style="color:var(--dark3);line-height:1.8;margin-bottom:2rem">
+            Stackly was founded in 2026 with a simple mission: to make job hunting less stressful and more effective.
+            By leveraging smart algorithms and a clean, user-centric design, we help millions of job seekers connect
+            with verified employers across the globe.
+        </p>
+
+        <h2 style="margin-bottom:1.5rem">Why Choose Us?</h2>
+        <ul class="bullet-list" style="color:var(--dark3);line-height:1.8;margin-bottom:2rem">
+            <li><strong>Verified Employers:</strong> Every job posting is vetted to ensure quality and authenticity.
+            </li>
+            <li><strong>Smart Recommendations:</strong> Our AI matching system suggests jobs perfectly suited to your
+                skillset.</li>
+            <li><strong>Resume Builder:</strong> Craft professional resumes in minutes using our free built-in tools.
+            </li>
+            <li><strong>Secure & Private:</strong> We value your privacy. Your data is encrypted and never sold to third
+                parties.</li>
+        </ul>
+
+        <h2 style="margin-bottom:1.5rem">Join Our Team</h2>
+        <p style="color:var(--dark3);line-height:1.8;margin-bottom:1.5rem">
+            We're always looking for talented individuals to join our own team. If you're passionate about changing the
+            future of work, we'd love to hear from you.
+        </p>
+        <button class="btn-primary" onclick="window.location.href='home2.html'">Explore Openings</button>
+    </div>
+
+    <footer
+        style="background:var(--dark);padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.5);font-size:.85rem;margin-top:4rem">
+        <p style="margin-bottom:.5rem;color:var(--gray)">📍 Location: Stackly Salem</p>
+        <p>© 2026 Stackly. All rights reserved. | <a href="home2.html" style="color:var(--primary-light)">Home</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
