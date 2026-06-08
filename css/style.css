@@ -210,6 +210,16 @@ textarea {
   padding: 0.5rem;
 }
 
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
 .nav-item-dropdown:hover .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
